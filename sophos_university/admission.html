@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="admission.css">    
+    <link rel="stylesheet" media="screen" href="footer.css">
+    <link rel="stylesheet" media="screen" href="head.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" href="image/logo.png">
+    <title>Sophos University College of Engineering and technology</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="first">
+            <ul>
+                <li><a href="login.html">Inicio sesion</a></li>
+                <li><a href="signup.html">Registrarse</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                
+            </ul>
+            
+        </div>
+        <div class="navbar">
+            <div id="align">
+                <a href="index.html">HOME</a>
+                <a href="course.html">CURSOS</a>
+                <a href="admission.html">ADMISION</a>
+                
+                <a href="about.html">SOBRE NOSOTROS</a>
+                <div class="dropdown">
+                  <button class="dropbtn">MAS
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="contact.html"> Visita el campus</a>
+                    <a href="event.html">Eventos</a>
+                    <a href="gallery.html">Galeria</a>
+                  </div>
+                </div> 
+            </div>
+        </div>
+        <a href="index.html"> <img src="image/logo.png" alt="sea college logo" height="130px" width="100px"></a>
+    </header>
+
+       
+    
+       <img src="image/uni.jpeg" alt="college image" height="450px" width="100%">
+        <form action="func.php" method="POST">
+            <label for="name">Nombre</label><input type="text" name="name" required> <br>
+            <label for="Phone">Numero de Creditos</label><input type="num" name="numcredit" required> <br>
+            <label for="name">Profesor</label><input type="text" name="Pname"> <br>
+            <label for="email">Email</label><input type="email" name="email" required> <br>
+            <label for="Phone">Numero de telefono</label><input type="tel" name="phone" required> <br>
+            <label for="Phone">Numero fijo</label><input type="tel" name="pphone" required> <br>
+            <label for="gender">Genero</label> <select name="gender" id="gender" required>
+           
+                <option value="Male">Masculino</option>
+                <option value="Female">Femenino</option>
+            </select> <br>
+            <label for="degree">Nivel de educacion</label> <select name="hdegree" id="hdegree" required>
+                <option value="10">Bachillerato</option>
+                <option value="2nd PUC">Pre-grado</option>
+                <option value="diploma">Post-grado</option>
+            </select> <br>
+            <label for="apply-for">Aplica para </label> <select name="applyfor" id="apply-for" required>
+                <option value="Graduation">Pre-grado</option>
+                <option value="Post-Graduation">Post-Grado</option>
+                <option value="MBA">MBA</option>
+            </select> <br>
+            <input type="submit" value="ENVIAR" name="login">
+        </form>
+        <script>
+            input.onblur = function() {
+              if (!input.value.includes('@')) { // not email
+                input.classList.add('invalid');
+                // error.innerHTML = 'Please enter a correct email.'
+              }
+            };
+
+            input.onfocus = function() {
+              if (this.classList.contains('invalid')) {
+                // remove the "error" indication, because the user wants to re-enter something
+                this.classList.remove('invalid');
+                // error.innerHTML = "";
+              }
+            };
+        </script>
+        <script src="app.js"></script>
+        <footer>
+            <div class="footerimg">
+                <h2>Galeria</h2>
+                <a style="text-decoration:none;" href="gallery.html">
+                    <img src="image/uni2.jpeg" width="100px" height="100px" alt="Campus picture">
+                    <img src="image/uni3.webp" width="100px" height="100px" alt="Badminton court">
+                    <img src="image/uni4.jpeg" width="100px" height="100px" alt="Library">
+                    <img src="image/uni5.jpeg" width="100px" height="100px" alt="colleg fest">
+                    <img src="image/uni6.jpeg" width="100px" height="100px" alt="festival picture">
+                    <img src="image/uni7.jpeg" width="100px" height="100px" alt="college event">
+                </a>
+            </div>
+            <div class="foot_second">
+                    <h2>Sobre nosotros</h2>
+                    <p>
+                        Collegium Engineering et Technologiae anno 2007-08 conditum est. Initio, munus incepit cum Scientia Computer, 
+                        Electronics et Communicatione, Scientiae et Mechanicae Informatio rami, 4 annos durationis Graduum Programma 
+                        in Engineering offerens. Duobus annis spatium Masters Program in Business Administration (MBA) anno 2008-09 addita est.
+                    </p>
+                    <a href="index.html">HOME</a>
+                    <a href="course.html">CURSOS</a>
+                    <a href="event.html">EVENTOS</a>
+                    <a href="admission.html">ADMISION</a>
+                    <a href="contact.html">CONTACTO</a>
+                   <p style="color:red; margin-top: 10px;"> SOPHOS UNIVERSITY <img src="image/logo.png" alt="college logo" width="20px" height="20px"></p>
+                </div>
+                
+        </footer>    
+</body>
+</html>
